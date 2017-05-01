@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.fyp.rowan.bloodglucosev3.ViewInsulin">
+
+    <EditText
+        android:id="@+id/datePicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter Date in format YYYY-MM-DD"
+        android:inputType="date" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="insulinData"
+        android:text="View Insulin Data" />
+
+    <ListView
+        android:id="@+id/list_insulin"
+        android:layout_width="wrap_content"
+        android:layout_height="481dp" />
+
+
+</LinearLayout>
